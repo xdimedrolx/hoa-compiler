@@ -8,7 +8,7 @@
                     "sampler", "isotropic", "random", "uniform", "exhaustive",
                     "coverage"],
     "require": {
-        "php" : ">=8.1"
+        "php" : ">=8.0"
     },
     "replace": {
         "hoa/compiler": "~3.0"
