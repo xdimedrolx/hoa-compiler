@@ -181,7 +181,7 @@ abstract class Rule
     {
         $old = $this->_nodeId;
 
-        if (false !== $pos = strpos($nodeId, ':')) {
+        if ($nodeId !== null && false !== $pos = strpos($nodeId, ':')) {
             $this->_nodeId      = substr($nodeId, 0, $pos);
             $this->_nodeOptions = str_split(substr($nodeId, $pos + 1));
         } else {
