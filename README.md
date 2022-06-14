@@ -16,6 +16,18 @@
   Moreover, Hoa aims at being a bridge between industrial and research worlds.
 </p>
 
+##What's new
+
+1. Support PHP > 8.0
+2. GitHub Action tests
+3. Use 'replace' in composer.json for updating without changes in code
+
+##Another forked packages
+
+1. [hoa-iterator](https://github.com/hiqdev/hoa-iterator)
+2. [hoa-protocol](https://github.com/hiqdev/hoa-protocol)
+3. [hoa-ruler](https://github.com/hiqdev/Hoa-Ruler)
+
 # Hoa\Compiler
 
 [![Help on IRC](https://img.shields.io/badge/help-%23hoaproject-ff0066.svg)](https://webchat.freenode.net/?channels=#hoaproject)
