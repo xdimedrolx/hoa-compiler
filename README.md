@@ -1,58 +1,27 @@
-<p align="center">
-  <img src="https://static.hoa-project.net/Image/Hoa.svg" alt="Hoa" width="250px" />
-</p>
+## Reasons to fork
+The Hoa project was archived, and no upgrades or patches are neither provided nor accepted by merge requests.
 
----
+HOA Packages include some code that is Deprecated for PHP 8.0 and PHP 8.1, but we needed these packages to run on modern PHP versions.
 
-<p align="center">
-  <a href="https://travis-ci.org/hoaproject/Compiler"><img src="https://img.shields.io/travis/hoaproject/Compiler/master.svg" alt="Build status" /></a>
-  <a href="https://coveralls.io/github/hoaproject/Compiler?branch=master"><img src="https://img.shields.io/coveralls/hoaproject/Compiler/master.svg" alt="Code coverage" /></a>
-  <a href="https://packagist.org/packages/hoa/compiler"><img src="https://img.shields.io/packagist/dt/hoa/compiler.svg" alt="Packagist" /></a>
-  <a href="https://hoa-project.net/LICENSE"><img src="https://img.shields.io/packagist/l/hoa/compiler.svg" alt="License" /></a>
-</p>
-<p align="center">
-  Hoa is a <strong>modular</strong>, <strong>extensible</strong> and
-  <strong>structured</strong> set of PHP libraries.<br />
-  Moreover, Hoa aims at being a bridge between industrial and research worlds.
-</p>
+## What's changed in from?
+The changes mainly affected the return data type hinting in methods declaration, access to uninitialized properties.
 
-##What's new
+## How to use
+We've currently forked the following packages, primarily to make hoa/ruler work with PHP 8.1:
 
-1. Support PHP > 8.0
-2. GitHub Action tests
-3. Use 'replace' in composer.json for updating without changes in code
+<table>
+<tr><th>Original package</th><th>Forked package</th></tr>
+<tr><td>hoa/ruler</td><td>hiqdev/hoa-ruler</td></tr>
+<tr><td>hoa/compiler</td><td>hiqdev/hoa-compiler</td></tr>
+<tr><td>hoa/protocol</td><td>hiqdev/hoa-protocol</td></tr>
+<tr><td>hoa/iterator</td><td>hiqdev/hoa-iterator</td></tr>
+</table>
+You can simply replace requirements in composer.json from hoa packages to the corresponding forked packages: there is no need to change something in the codebase.
 
-##Another forked packages
+If you use someone's package, that requires hoa – simply add forks to your project root composer.json: we have marked forks as a replacement, so composer will install them instead of the original packages.
 
-1. [hoa-iterator](https://github.com/hiqdev/hoa-iterator)
-2. [hoa-protocol](https://github.com/hiqdev/hoa-protocol)
-3. [hoa-ruler](https://github.com/hiqdev/Hoa-Ruler)
-
-# Hoa\Compiler
-
-[![Help on IRC](https://img.shields.io/badge/help-%23hoaproject-ff0066.svg)](https://webchat.freenode.net/?channels=#hoaproject)
-[![Help on Gitter](https://img.shields.io/badge/help-gitter-ff0066.svg)](https://gitter.im/hoaproject/central)
-[![Documentation](https://img.shields.io/badge/documentation-hack_book-ff0066.svg)](https://central.hoa-project.net/Documentation/Library/Compiler)
-[![Board](https://img.shields.io/badge/organisation-board-ff0066.svg)](https://waffle.io/hoaproject/compiler)
-
-This library allows to manipulate LL(1) and LL(k) compiler compilers. A
-dedicated grammar description language is provided for the last one: the PP
-language.
-
-[Learn more](https://central.hoa-project.net/Documentation/Library/Compiler).
-
-## Installation
-
-With [Composer](https://getcomposer.org/), to include this library into
-your dependencies, you need to
-require [`hoa/compiler`](https://packagist.org/packages/hoa/compiler):
-
-```sh
-$ composer require hoa/compiler '~3.0'
-```
-
-For more installation procedures, please read [the Source
-page](https://hoa-project.net/Source.html).
+## Versions
+We've forked from the latest hoa package versions and bump own versions starting from 1.0.
 
 ## Testing
 
