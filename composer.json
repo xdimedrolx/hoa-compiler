@@ -9,15 +9,15 @@
                     "coverage"],
     "license"    : "BSD-3-Clause",
     "require": {
-        "php" : ">=7.4",
+        "php": ">=7.4",
         "hoa/consistency": "~1.0",
-        "hoa/exception"  : "~1.0",
-        "hoa/file"       : "~1.0",
-        "hoa/iterator"   : "~2.0",
-        "hoa/math"       : "~1.0",
-        "hoa/protocol"   : "~1.0",
-        "hoa/regex"      : "~1.0",
-        "hoa/visitor"    : "~2.0"
+        "hoa/exception": "~1.0",
+        "hoa/file": "~1.0",
+        "hiqdev/hoa-iterator": "dev-master",
+        "hoa/math": "~1.0",
+        "hiqdev/hoa-protocol": "dev-master",
+        "hoa/regex": "~1.0",
+        "hoa/visitor": "~2.0"
     },
     "require-dev": {
       "phpunit/phpunit": "^9.5",
