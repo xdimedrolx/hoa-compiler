@@ -1,5 +1,5 @@
 {
-    "name"       : "hiqdev/hoa-compiler",
+    "name"       : "xdimedrolx/hoa-compiler",
     "description": "The Hiqdev Hoa\\Compiler library.",
     "type"       : "library",
     "keywords"   : ["library", "compiler", "grammar", "language", "ll1",
