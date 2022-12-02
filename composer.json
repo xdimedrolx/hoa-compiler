@@ -12,7 +12,7 @@
         "php": ">=7.4",
         "hoa/consistency": "~1.0",
         "hoa/exception": "~1.0",
-        "hoa/file": "~1.0",
+        "xdimedrolx/hoa-file": "^1.0",
         "xdimedrolx/hoa-iterator": "^1.0",
         "hoa/math": "~1.0",
         "xdimedrolx/hoa-protocol": "^1.0",
